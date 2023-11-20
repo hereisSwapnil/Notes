@@ -1,0 +1,118 @@
+.textColor {
+  color: #0c1b33 !important;
+}
+
+.navEle {
+  color: #3b3b3b !important;
+}
+
+.bgColor {
+  background-color: #ffb30f !important;
+}
+
+.btn_ {
+  border: 1px solid #0c1b33 !important;
+  border-radius: 19px !important;
+  color: #0c1b33;
+}
+
+.btn_:hover {
+  background-color: initial;
+  color: initial;
+  border-color: initial;
+}
+
+.btnFill_ {
+  background-color: #0c1b33 !important;
+  color: #f3f9d2;
+}
+
+.btnFill_:hover {
+  background-color: initial;
+  color: initial;
+  border-color: initial;
+}
+
+.homeContainer {
+  max-width: 100vw !important;
+  justify-content: center;
+  height: 90vh;
+}
+
+.container {
+  margin: 0;
+  max-width: 100vw;
+  padding: 0;
+  align-items: center;
+  align-self: center;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* White color */
+  border-radius: 10px; /* Pill shape */
+}
+
+/* Optional: Hover styles for the scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e0e0e0; /* Lighter color on hover */
+}
+
+/* Optional: Scrollbar Track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Track color */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent !important;
+}
+
+.homeHeader {
+  font-size: 80px !important;
+}
+
+.innerHomeContent {
+  width: 40vw;
+  margin-top: 70px;
+}
+
+.homeTagButton {
+  width: fit-content;
+  margin: auto;
+}
+
+.aboutHeaders {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0c1b33;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  margin: auto;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.listDiv {
+  justify-content: space-between;
+}
