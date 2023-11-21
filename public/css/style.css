@@ -6,6 +6,10 @@
   color: #3b3b3b !important;
 }
 
+.nav-link:hover {
+  color: black !important;
+}
+
 .bgColor {
   background-color: #ffb30f !important;
 }
@@ -17,8 +21,8 @@
 }
 
 .btn_:hover {
-  background-color: initial;
-  color: initial;
+  background-color: #0c1b33 !important;
+  color: #e0e0e0 !important;
   border-color: initial;
 }
 
@@ -28,8 +32,8 @@
 }
 
 .btnFill_:hover {
-  background-color: initial;
-  color: initial;
+  background-color: #2b4162 !important;
+  color: #e0e0e0;
   border-color: initial;
 }
 
@@ -115,4 +119,139 @@
 
 .listDiv {
   justify-content: space-between;
+}
+
+.dashboardUserHeader {
+  font-size: 35px;
+  font-weight: 600;
+  color: #0c1b33;
+}
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  justify-content: center;
+  margin: auto;
+  gap: 30px;
+}
+
+.userInnerNav {
+  justify-content: space-between;
+}
+
+.createOneLink {
+  font-weight: 500;
+  color: #0c1b33;
+}
+
+.createOneLink:hover {
+  color: #2b4162;
+}
+
+.search {
+  width: 40vw;
+  margin-bottom: auto;
+  height: 50px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  margin-top: 5px;
+  caret-color: transparent;
+  line-height: 20px;
+  transition: width 0.4s linear;
+}
+
+.search .search-input {
+  padding: 0 10px;
+  width: 100%;
+  caret-color: #0c1b33;
+  font-size: 19px;
+  font-weight: 300;
+  color: #3b3b3b;
+  transition: width 0.4s linear;
+}
+
+.search-icon {
+  height: 34px;
+  width: 34px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0c1b33;
+  font-size: 10px;
+  bottom: 30px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.search-icon:hover {
+  background-color: #2b4162;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.breadcrumbDashboard {
+  margin: 0;
+}
+
+.breadcrumb a {
+  color: #0c1b33 !important;
+  text-decoration: underline;
+}
+
+.breadcrumb a:hover {
+  color: #2b4162 !important;
+}
+
+.noBorder {
+  border: none;
+}
+
+.noBLradius {
+  border-bottom-left-radius: 0;
+}
+
+.noBRradius {
+  border-bottom-right-radius: 0;
+}
+
+.noULradius {
+  border-top-left-radius: 0;
+}
+
+.noURradius {
+  border-top-right-radius: 0;
+}
+
+.form-control:active,
+.form-control:focus {
+  box-shadow: none !important;
+  resize: none !important;
+}
+
+.deleteBtn {
+  background-color: #ff1d15 !important;
+  border: none !important;
+}
+
+.deleteBtn:hover {
+  background-color: #ff1d15 !important;
+}
+
+.searchListEle a {
+  font-weight: 500 !important;
+  text-decoration: underline !important;
 }

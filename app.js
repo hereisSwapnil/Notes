@@ -10,6 +10,7 @@ const port = 8080;
 
 // import routers
 const indexRouters = require('./routes/index')
+const noteRouters = require('./routes/notes')
 
 // setting ejs view engine
 app.set("view engine", "ejs");
@@ -20,6 +21,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouters);
+app.use("/", noteRouters);
 
 // setting views and public paths
 app.set("views", path.join(__dirname, "views"));

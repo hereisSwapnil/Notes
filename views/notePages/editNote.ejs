@@ -1,0 +1,25 @@
+<% layout('./layouts/boilerplate') -%>
+
+    <body>
+        <div class="dashboardContainer" style="gap: 10px;">
+            <nav aria-label="breadcrumb" class="breadcrumbDashboard">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Note Title</li>
+                </ol>
+            </nav>
+            <div class="d-flex" style=" height: fit-content; justify-content: space-between;">
+                <h1 style="font-size: 30px;">View Note</h1>
+                <button class="btn btn-primary btn_ btnFill_ deleteBtn"
+                    style="border-radius: 25px !important; justify-content: space-between; width: fit-content;">Delete</button>
+            </div>
+            <div>
+                <input type="email" class="form-control noBorder noBLradius noBRradius" id="exampleFormControlInput1"
+                    placeholder="Title" style="font-weight: 500;">
+                <textarea class="form-control noBorder noULradius noURradius" id="exampleFormControlTextarea1" rows="15"
+                    placeholder="Take a note..."></textarea>
+            </div>
+            <button class="btn btn-primary btn_ btnFill_"
+                style="border-radius: 25px !important; justify-content: space-between; width: fit-content;">Update</button>
+        </div>
+    </body>
