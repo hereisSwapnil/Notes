@@ -6,15 +6,35 @@
         </a>
     </div>
 
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/" class="nav-link px-2 navEle">Home</a></li>
-        <li><a href="#" class="nav-link px-2 navEle">Features</a></li>
-        <li><a href="#" class="nav-link px-2 navEle">FAQs</a></li>
-        <li><a href="/about" class="nav-link px-2 navEle">About</a></li>
-    </ul>
+    <% if (!currUser) { %>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/" class="nav-link px-2 navEle">Home</a></li>
+            <li><a href="#" class="nav-link px-2 navEle">Features</a></li>
+            <li><a href="#" class="nav-link px-2 navEle">FAQs</a></li>
+            <li><a href="/about" class="nav-link px-2 navEle">About</a></li>
+        </ul>
+        <% } %>
+            <% if (currUser) { %>
+                <div class="d-flex justify-content-center">
+                    <div class="search">
+                        <form action="/search" method="POST">
+                            <input type="search" class="search-input" placeholder="Search..." name="search">
+                        </form>
+                    </div>
+                </div>
+                <% } %>
 
-    <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2 btn_">Sign Up</button>
-        <button type="button" class="btn btn-primary btn_ btnFill_">Sign In</button>
-    </div>
+                    <div class="col-md-3 text-end">
+                        <% if (!currUser) { %>
+                            <a href="auth/google"><button type="button" class="btn btn-outline-primary me-2 btn_">Sign
+                                    Up</button></a>
+                            <a href="auth/google"><button type="button" class="btn btn-primary btn_ btnFill_">Sign
+                                    In</button></a>
+                            <% } %>
+                                <% if (currUser) { %>
+                                    <a href="/logout">
+                                        <button type="button" class="btn btn-outline-primary me-2 btn_">Logout</button>
+                                    </a>
+                                    <% } %>
+                    </div>
 </header>

@@ -1,0 +1,41 @@
+<% layout('./layouts/boilerplate') -%>
+
+    <body>
+        <div class="dashboardContainer">
+            <div class="d-flex userInnerNav">
+                <h2 class="dashboardUserHeader">Hey, <%= currUser.firstName%>
+                </h2>
+                <form action="/note" method="get"><button type="submit" class="btn btn-primary btn_ btnFill_"
+                        style="border-radius: 25px !important; justify-content: space-between;">+ New
+                        Note</button></form>
+            </div>
+            <% if (!notesCreated.length) { %>
+                <div class="d-flex">
+                    <img src="./images/human-3.svg" alt="">
+                    <div>
+                        <h2 class="dashboardUserHeader" style="font-size: 30px !important;">Okay...</h2>
+                        <p class="navEle">Let's start with your first note!</p>
+                        <a href="/note" class="createOneLink">Create one!</a>
+                    </div>
+                </div>
+                <% } %>
+                    <% if (notesCreated.length) { %>
+                        <div class="card-grid">
+                            <% notesCreated.forEach(note=> { %>
+                                <a href="/note/<%= note._id %>">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="card-title">
+                                                <%= note.title %>
+                                            </div>
+                                            <div class="card-body">
+                                                <%= note.body %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <% }) %>
+                        </div>
+                        <% } %>
+        </div>
+    </body>

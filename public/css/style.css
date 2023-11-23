@@ -178,6 +178,7 @@
   font-weight: 300;
   color: #3b3b3b;
   transition: width 0.4s linear;
+  padding-right: 42px;
 }
 
 .search-icon {
@@ -254,4 +255,44 @@ a:link {
 .searchListEle a {
   font-weight: 500 !important;
   text-decoration: underline !important;
+}
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  max-height: 200px; /* Set your desired fixed height */
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  font-size: 1rem;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 0;
 }

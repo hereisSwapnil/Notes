@@ -1,0 +1,40 @@
+<% layout('./layouts/boilerplate') -%>
+
+    <body>
+        <div class="dashboardContainer">
+            <div class="d-flex userInnerNav">
+                <h2 class="dashboardUserHeader">Hey, <%= currUser.firstName %>
+                </h2>
+                <form action="/note" method="get">
+                    <button type="submit" class="btn btn-primary btn_ btnFill_"
+                        style="border-radius: 25px !important; justify-content: space-between;">+ New Note</button>
+                </form>
+            </div>
+            <nav aria-label="breadcrumb" class="breadcrumbDashboard">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Search</li>
+                </ol>
+            </nav>
+            <% if (result && result.length>0) { %>
+                <div class="card-grid">
+                    <% result.forEach(r=> { %>
+                        <a href="/note/<%= r._id %>">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <%= r.title %>
+                                    </div>
+                                    <div class="card-body">
+                                        <%= r.body %>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <% }) %>
+                </div>
+                <% } else { %>
+                    <p>Nothing found...</p>
+                    <% } %>
+        </div>
+    </body>
