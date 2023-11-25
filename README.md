@@ -22,7 +22,7 @@
    npm install
    ```
 
-3. Set up your environment variables.
+3. Set up your environment variables ( GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, MONGO_URI ).
 
 4. Run the application:
 
